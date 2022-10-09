@@ -1,0 +1,260 @@
+@font-face {
+    font-family: "jakarta-bold";
+    font-style: normal;
+    font-weight: normal;
+    src: local("SF-Pro-Regular"),
+      url("../../../../jakarta/PlusJakartaDisplay-Bold.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: "jakarta-medium";
+    font-style: normal;
+    font-weight: normal;
+    src: local("SF-Pro-Regular"),
+      url("../../../../jakarta/PlusJakartaDisplay-Medium.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "jakarta-light";
+    font-style: normal;
+    font-weight: normal;
+    src: local("SF-Pro-Regular"),
+      url("../../../../jakarta/PlusJakartaDisplay-Light.otf") format("opentype");
+  }
+
+
+
+
+
+.colorTitle {
+    
+    background: -webkit-linear-gradient(
+      360deg,
+      rgb(177, 108, 234) 0%,
+      rgb(225, 99, 155) 30%,
+      rgb(255, 104, 101) 60%,
+      rgb(255, 133, 88) 90%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: jakarta-bold;
+    font-size: 3vw;
+    width: 100%;
+
+  }
+
+.colorTitle:hover{
+    cursor: pointer;
+    border-bottom: 2px solid green;
+}
+  .container{
+      width: 60vw;
+      position:absolute;
+      left: 45%;
+      transform: translateX(-50%);
+      /* background-color: black; */
+      color: white;
+      height: 400px;
+  }
+  .mainContainer{
+      position: absolute;
+      width: 100vw;
+      height: 400px;
+      background-color: black;
+   
+  }
+
+  
+
+  
+  .mainContainer:before, .mainContainer:after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(60deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+      #0000ff, #00ff00,#ffff00, #ff0000);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: steam 60s ease-in infinite;
+  }
+  
+  @keyframes steam {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .mainContainer:after {
+    filter: blur(100px);
+  }
+  .textContainer{
+      position: relative;
+      width: 100vw;
+  }
+  .title{
+      font-family: jakarta-bold;
+      font-size: 3vw;
+      width: 100%;
+  }
+
+  .list{
+      position:relative;
+      float: right;
+      display:flex;
+     justify-content:center;
+      gap: 200px;
+      top: 100px;
+      font-family: jakarta-medium;
+      font-size: 2rem;
+      margin-right: 200px;
+  }
+  .list>p:hover{
+      cursor: pointer;
+      color: lightgrey;
+  }
+  .copyright{
+      width: 100%;
+      color: lightgrey;
+      position: absolute;
+      bottom: 20px;
+      
+  }
+
+  @media screen and (max-width:1500px){
+      .list{
+          font-size: 1.5rem;
+      }
+  }
+
+  @media screen and (max-width:1200px){
+    
+      .mainContainer{
+          top: 750px;
+          height: 250px;
+      }
+      .container{
+          height: 250px;
+      }
+      .list{
+        font-size: 1.5rem;
+        gap: 100px;
+        float: left;
+        left: 150px;
+        top: 50px;
+    }
+  }
+
+  @media screen and (max-width:1000px){
+    
+    .mainContainer{
+        top: 1300px;
+    }
+    .list{
+      font-size: 1.5rem;
+      gap: 100px;
+      float: left;
+      left: 150px;
+  }
+}
+
+@media screen and (max-width:800px){
+    
+    .mainContainer{
+        top: 1300px;
+    }
+    .list{
+      font-size: 1.5rem;
+      gap: 100px;
+      float: left;
+      left: 150px;
+  }
+  .list>p{
+      font-size: 1rem;
+  }
+}
+
+@media screen and (max-width:600px){
+    
+    .mainContainer{
+        top: 2200px;
+    }
+    .list{
+      font-size: 1.5rem;
+      gap: 100px;
+      float: left;
+      left: 150px;
+  }
+  .list>p{
+      font-size: 1rem;
+  }
+}
+
+@media screen and (max-width:500px){
+    
+    .mainContainer{
+        top: 2000px;
+        height: 350px;
+    }
+    .container{
+        height: 350px;
+    }
+    .copyright{
+      font-size: .8rem;
+    }
+    .title{
+        font-size: 4vw;
+    }
+    .colorTitle{
+        font-size: 1.5rem
+    }
+    .list{
+      font-size: 1rem;
+      gap: 10px;
+      margin-left:-150px;
+      display:flex;
+      flex-direction: column;
+  }
+  .list>p{
+      font-size: 1rem;
+  }
+ 
+}
+
+@media screen and (max-width:400px){
+    
+    .mainContainer{
+        top: 1900px;
+        height: 350px;
+    }
+    .container{
+        height: 350px;
+    }
+    .copyright{
+      font-size: .8rem;
+    }
+    .title{
+        font-size: 5vw;
+    }
+    .colorTitle{
+        font-size: 1.5rem
+    }
+    .list{
+      font-size: 1rem;
+      gap: 10px;
+      margin-left:-150px;
+      display:flex;
+      flex-direction: column;
+  }
+  .list>p{
+      font-size: 1rem;
+  }
+ 
+}

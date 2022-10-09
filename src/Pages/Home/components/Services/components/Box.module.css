@@ -1,0 +1,155 @@
+@font-face {
+    font-family: "jakarta-bold";
+    font-style: normal;
+    font-weight: normal;
+    src: local("SF-Pro-Regular"),
+      url("../../../../../jakarta/PlusJakartaDisplay-Bold.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: "jakarta-medium";
+    font-style: normal;
+    font-weight: normal;
+    src: local("SF-Pro-Regular"),
+      url("../../../../../jakarta/PlusJakartaDisplay-Medium.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "jakarta-light";
+    font-style: normal;
+    font-weight: normal;
+    src: local("SF-Pro-Regular"),
+      url("../../../../../jakarta/PlusJakartaDisplay-Light.otf") format("opentype");
+  }
+.containerList{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    z-index: -22;
+}
+.containerList>h3,.containerList>p{
+    
+    width: 100%;
+   
+    /* background-color: orange */
+}
+
+.containerList>h3{
+font-family: jakarta-medium;
+letter-spacing: 1px;
+font-size: 1.5rem;
+}
+.containerList>p{
+    font-family: jakarta-light;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    color: grey;
+}
+
+.containerList>ul{
+    font-family: jakarta-bold;
+    line-height: 30px;
+    font-size: 1.1rem;
+    margin-left: 10px;
+    height:2rem;
+    position: absolute;
+    width: 100%;
+}
+.list1{
+    width: 100%;
+}
+.list2{
+    width: 100%;
+}
+.list3{
+    width: 100%;
+}
+
+.containerList>li{
+    font-family: jakarta-bold;
+    line-height: 30px;
+    font-size: 1.1rem;
+    margin-left: 10px;
+    height:2rem;
+    background:red;
+    
+}
+.logo{
+    position: absolute;
+    width: 70px;
+    top: -90%;
+    left: 30%;
+}
+
+@media screen and (max-width:1500px){
+    .logo{
+        top: -90%;
+    }
+    .containerList{
+        position: absolute;
+        width: 200px;
+        margin-left: -20px;
+    }
+    .list1,.list2,.list3{
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width:1200px){
+    .logo{
+        top: -100%;
+        left: 100px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .containerList{
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        z-index: -22;
+    }
+    .containerList>h3{
+        font-family: jakarta-medium;
+        letter-spacing: 1px;
+        font-size: 2rem;
+        }
+        .containerList>p{
+            font-family: jakarta-light;
+            letter-spacing: 1px;
+            font-size: 1.2rem;
+            color: grey;
+        }
+        .logo{
+            top: -100%;
+            left: 100px;
+        }
+}
+
+@media screen and (max-width:800px){
+    .logo{
+        top: -100%;
+        left: 100px;
+    }
+}
+@media screen and (max-width:500px){
+    .logo{
+        position: absolute;
+        width: 70px;
+        top: -100%;
+        left: 20%;
+    }
+    
+    
+}
+
+@media screen and (max-width:400px){
+    .containerList{
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        z-index: -22;
+    }
+    .logo{
+        top: -120%;
+        left: 50px;
+    }
+}

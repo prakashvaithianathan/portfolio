@@ -1,0 +1,123 @@
+@font-face {
+    font-family: "jakarta-bold";
+    font-style: normal;
+    font-weight: normal;
+    src: local("SF-Pro-Regular"),
+      url("../../../../src/jakarta/PlusJakartaDisplay-Bold.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: "jakarta-medium";
+    font-style: normal;
+    font-weight: normal;
+    src: local("SF-Pro-Regular"),
+      url("../../../../src/jakarta/PlusJakartaDisplay-Medium.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "jakarta-light";
+    font-style: normal;
+    font-weight: normal;
+    src: local("SF-Pro-Regular"),
+      url("../../../../src/jakarta/PlusJakartaDisplay-Light.otf") format("opentype");
+  }
+
+
+.container{
+     position: absolute;
+     width: 80vw;
+     left: 50%;
+     transform: translateX(-50%);
+     top: 10%;
+}
+.first{
+    position: relative;
+    width: 100%;
+}
+.title{
+    width: 100%;
+    font-family: jakarta-bold;
+    text-align: center;
+    margin: 100px 0;
+    /* font-size: 3vw; */
+}
+.container>div>h2{
+    font-family: jakarta-medium;
+}
+.container>div>p{
+    font-family: jakarta-medium;
+}
+.first>h2{
+    width: 100%;
+}
+.container>div>img{
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin:50px 0px;
+    width: 70%;
+    height: auto;
+}
+.first>p{
+    width: 100%;
+    line-height: 30px;
+}
+.second{
+    position: relative;
+    width: 100%;
+}
+.second>h2{
+    width: 100%;
+}
+.second>p{
+    width: 100%;
+    line-height: 30px;
+}
+
+.third{
+    position: relative;
+    width: 100%;
+}
+.third>h2{
+    width: 100%;
+}
+.third>p{
+    width: 100%;
+    line-height: 30px;
+}
+
+.four{
+    position: relative;
+    width: 100%;
+}
+.four>h2{
+    width: 100%;
+}
+.four>p{
+    width: 100%;
+    line-height: 30px;
+}
+
+.fifth {
+    position: relative;
+    width: 100%;
+}
+.fifth>h2{
+    width: 100%;
+}
+.fifth>p{
+    width: 100%;
+    line-height: 30px;
+}
+
+.six {
+    position: relative;
+    width: 100%;
+}
+.six>h2{
+    width: 100%;
+}
+.six>p{
+    width: 100%;
+    line-height: 30px;
+}

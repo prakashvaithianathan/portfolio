@@ -1,0 +1,1118 @@
+@font-face {
+  font-family: "jakarta-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF-Pro-Regular"),
+    url("../../../../jakarta/PlusJakartaDisplay-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "jakarta-medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF-Pro-Regular"),
+    url("../../../../jakarta/PlusJakartaDisplay-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "jakarta-light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF-Pro-Regular"),
+    url("../../../../jakarta/PlusJakartaDisplay-Light.otf") format("opentype");
+}
+
+.container {
+  position: absolute;
+  top: 1600px;
+  left:100px;
+  width: 5000px;
+  height: 500px;
+  padding: 100px;
+transform: translateX(800px);
+}
+
+.projects {
+  font-family: jakarta-medium;
+  font-size: 2rem;
+  letter-spacing: 5px;
+  background: -webkit-linear-gradient(
+    360deg,
+    rgb(177, 108, 234) 0%,
+    rgb(225, 99, 155) 30%,
+    rgb(255, 104, 101) 60%,
+    rgb(255, 133, 88) 90%
+  );
+  width: 200px;
+  height: 100px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 300px;
+}
+.dot1 {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  background: black;
+  top: 15px;
+  margin-left: 10px;
+  top: 50px;
+}
+.dot2 {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  background: black;
+  top: 15px;
+  margin-left: 10px;
+  top: 120px;
+}
+
+/* .title {
+  position: relative;
+  width: 100%;
+  font-size: 4rem;
+  font-family: jakarta-bold;
+  margin-top: 50px;
+  margin-left: -100px;
+} */
+.title{
+  position: absolute;
+  left: 300px;
+ 
+}
+.viewProjectBox {
+  position: absolute;
+  left: 1000px;
+  height: 1000px;
+  top: 150px;
+margin-left: 300px;
+
+}
+.viewProject {
+  width: 200px;
+  background: black;
+  font-family: jakarta-medium;
+  color: white;
+  outline: none;
+  border: none;
+  height: 50px;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.5s ease;
+}
+.viewProject:hover {
+  cursor: pointer;
+  transform: translate(10px, 10px);
+}
+
+.linearGradientBox {
+  content: "";
+  position: absolute;
+  left: 10px;
+  width: 200px;
+  height: 50px;
+  top: 10px;
+  background: linear-gradient(
+    90deg,
+    rgb(177, 108, 234) 0%,
+    rgb(225, 99, 155) 30%,
+    rgb(255, 104, 101) 60%,
+    rgb(255, 133, 88) 90%
+  );
+}
+
+
+
+
+.listBox {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  width: 100%;
+  position: relative;
+  top: 550px;
+}
+.listInsideBox {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 300px;
+  height: 350px;
+  top: -300px;
+  transition:transform .2s ease-in;
+ background:rgb(255, 255, 255);
+ overflow: hidden;
+}
+.projectImage {
+  width: 300px;
+  height: 230px;
+  position: relative;
+  top: 0px;
+  left: 200px;
+  margin-left: 100px;
+  overflow: hidden;
+  transition: all .2s ease;
+}
+.listInsideBox:hover .projectImage{
+  position:absolute;
+  left: -100px;
+  cursor: pointer;
+  transform: scale(1.1);
+  overflow: hidden;
+  /* height: 100%; */
+}
+
+.listText {
+  position: absolute;
+
+  left: 10px;
+  bottom: 50px;
+  width: 100%;
+}
+.projectName{
+  width: 100%;
+  font-family: jakarta-medium;
+  letter-spacing: 5px;
+  background: -webkit-linear-gradient(
+    360deg,
+    rgb(177, 108, 234) 0%,
+    rgb(225, 99, 155) 30%,
+    rgb(255, 104, 101) 60%,
+    rgb(255, 133, 88) 90%
+  );
+  width: 200px;
+  height: 100px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+}
+.listText > h4 {
+  width: 100%;
+  font-family: jakarta-bold;
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+}
+
+.prev {
+  position: absolute;
+  left: 10px;
+  border: none;
+  outline: none;
+  font-family: jakarta-medium;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 5px;
+  padding: 20px 30px;
+  background:white;
+}
+.next {
+  position: absolute;
+  right: 20px;
+  border: none;
+  outline: none;
+  font-family: jakarta-medium;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 20px 30px;
+  background:white;
+
+}
+
+.buttons {
+  position:absolute;
+  width: 155px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  left: 100px;
+   top: 1000px;
+  /* transform: translate(400%,0px); */
+
+}
+
+.blackBackGround{
+  position: absolute;
+  background-color:black;
+  width: 150%;
+  height: 500px;
+  left: -1500px;
+  z-index: -12;
+  top: 750px;
+  overflow:hidden;
+  
+}
+
+.projectView{
+  position: absolute;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  font-family: jakarta-light;
+  
+}
+
+.projectView:hover{
+  cursor: pointer;
+  color: lightgrey;
+}
+@media screen and (min-width:3000px){
+  .container{
+    left: 50px;
+  }
+}
+
+
+@media screen and (max-width:3000px){
+  .container{
+    position: fixed;
+    left: -150px;
+  }
+}
+@media screen and (max-width:2500px){
+  .container{
+    left: 300px;
+  }
+  .projectImage{
+    height: 210px;
+  }
+}
+@media screen and (max-width:2200px){
+  .container{
+    left: 200px;
+  }
+}
+
+@media screen and (max-width:2000px){
+  .container{
+    left: 50px;
+  }
+}
+@media screen and (min-width: 2500px) {
+  
+ 
+  .viewProjectBox {
+    position: absolute;
+    left: 750px;
+    top: 150px;
+  }
+  .title {
+    position: relative;
+    width: 100%;
+    font-size: 3.5rem;
+    font-family: jakarta-bold;
+    margin-top: 50px;
+    margin-left: -100px;
+  }
+  .dot1 {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    background: black;
+    margin-left: 10px;
+    top: 40px;
+  }
+  .dot2 {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    background: black;
+    margin-left: 10px;
+    top: 105px;
+  }
+  
+}
+
+@media screen and (max-width: 2500px) {
+  .viewProjectBox {
+    position: absolute;
+    /* left: 750px; */
+    top: 150px;
+  }
+  .title {
+    position: relative;
+    width: 100%;
+    font-size: 3.5rem;
+    font-family: jakarta-bold;
+    margin-top: 50px;
+    margin-left: -100px;
+  }
+  .dot1 {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    background: black;
+    margin-left: 10px;
+    top: 40px;
+  }
+  .dot2 {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    background: black;
+    margin-left: 10px;
+    top: 105px;
+  }
+  
+}
+
+
+
+@media screen and (max-width: 2000px) {
+  .viewProjectBox {
+    position: absolute;
+    left: 800px;
+    top: 300px;
+  }
+  .projects{
+    top: 200px;
+  }
+  .title{
+    top: 100px;
+  }
+  .dot1 {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    background: black;
+    margin-left: 10px;
+    top: 40px;
+  }
+  .dot2 {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    background: black;
+    margin-left: 10px;
+    top: 105px;
+  }
+  
+}
+
+@media screen and (max-width:1800px){
+  .container{
+    left: -0px;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .container{
+    left: -100px;
+  }
+  .viewProjectBox {
+    position: absolute;
+    left: 700px;
+    top: 400px;
+  }
+  .projects{
+    top: 350px;
+  }
+  .title {
+    position: relative;
+    width: 100%;
+    font-size: 3.5rem;
+    font-family: jakarta-bold;
+    top: 250px;
+    margin-left: -100px;
+  }
+  .dot1 {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    background: black;
+    margin-left: 10px;
+    top: 40px;
+  }
+  .dot2 {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    background: black;
+    margin-left: 10px;
+    top: 105px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .viewProjectBox {
+    position: absolute;
+    left: 600px;
+    top: 350px;
+  }
+  .projects{
+    top: 300px;
+  }
+  .title {
+    position: relative;
+    width: 100%;
+    font-size: 3.5rem;
+    font-family: jakarta-bold;
+   top: 200px;
+    margin-left: -100px;
+  }
+  .dot1 {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    background: black;
+    margin-left: 10px;
+    top: 40px;
+  }
+  .dot2 {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    background: black;
+    margin-left: 10px;
+    top: 105px;
+  }
+  .projectImage{
+    height: 220px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .container{
+    left: -200px;
+  }
+  .projects{
+    top: 300px;
+  }
+  .viewProjectBox {
+    position: absolute;
+    left: 550px;
+    top: 350px;
+  }
+  .title {
+    position: relative;
+    width: 100%;
+    font-size: 3rem;
+    font-family: jakarta-bold;
+    top: 200px;
+    margin-left: -100px;
+  }
+  .dot1 {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background: black;
+    margin-left: 10px;
+    top: 35px;
+  }
+  .dot2 {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background: black;
+    margin-left: 10px;
+    top: 90px;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .container {
+    top: 1700px;
+    left:-250px;
+  }
+  .projects{
+    left: 100px;
+    top: 300px;
+  }
+  .viewProjectBox {
+    position: absolute;
+    left: 400px;
+    top: 350px;
+  }
+  .title {
+    position: relative;
+    width: 100%;
+    font-size: 3rem;
+    font-family: jakarta-bold;
+    top: 200px;
+    margin-left: -300px;
+  }
+  .dot1 {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background: black;
+    margin-left: 10px;
+    top: 35px;
+  }
+  .dot2 {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background: black;
+    margin-left: 10px;
+    top: 90px;
+  }
+  .listInsideBox {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    top: -300px;
+    transition:transform .2s ease;
+   background:rgb(255, 255, 255);
+   margin-left: -100px;
+  
+  }
+  .projectImage {
+    width: 400px;
+    height: 230px;
+    position: absolute;
+    top: 0px;
+    left: 500px;
+    margin-left: 100px;
+  }
+  
+  .listText {
+    position: absolute;
+  
+    left: 10px;
+    bottom: 50px;
+    width: 100%;
+  }
+  .listBox{
+    gap: 200px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    top: 2600px;
+    left: -350px;
+  }
+  .viewProjectBox {
+    position: absolute;
+    left: 350px;
+    top: 350px;
+  }
+  .projects {
+    position: absolute;
+    left: 150px;
+    transform: translateX(-50%);
+  }
+  .title {
+    position: relative;
+    width: 100%;
+    font-size: 3rem;
+    font-family: jakarta-bold;
+    margin-top: 50px;
+    margin-left: -250px;
+  }
+  .dot1 {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background: black;
+    margin-left: 10px;
+    top: 35px;
+  }
+  .dot2 {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background: black;
+    margin-left: 10px;
+    top: 90px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    top: 2600px;
+    left: -450px;
+  }
+  .viewProjectBox {
+    position: absolute;
+    left: 300px;
+
+  }
+  .projects {
+    position: absolute;
+    left: 150px;
+    transform: translateX(-50%);
+  }
+  .title {
+    position: relative;
+    width: 100%;
+    font-size: 3rem;
+    font-family: jakarta-bold;
+    margin-top: 50px;
+    margin-left: -250px;
+  }
+  .dot1 {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background: black;
+    margin-left: 10px;
+    top: 35px;
+  }
+  .dot2 {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background: black;
+    margin-left: 10px;
+    top: 90px;
+  }
+  .listInsideBox {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    top: -300px;
+    transition:transform .2s ease;
+   background:rgb(255, 255, 255);
+  
+  }
+  .projectImage {
+    width: 400px;
+    height: 230px;
+    position: absolute;
+    top: 0px;
+    left: 420px;
+    margin-left: 100px;
+  }
+  
+  .listText {
+    position: absolute;
+  
+    left: 10px;
+    bottom: 50px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    top: 2600px;
+  }
+  .viewProjectBox {
+    position: absolute;
+    left: 250px;
+    /* top: 30px; */
+  }
+  .projects {
+    position: absolute;
+    left: 50px;
+    transform: translateX(-50%);
+  }
+  .title {
+    position: relative;
+    width: 100%;
+    font-size: 3rem;
+    font-family: jakarta-bold;
+    margin-top: 50px;
+    margin-left: -350px;
+  }
+  .dot1 {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background: black;
+    margin-left: 10px;
+    top: 35px;
+  }
+  .dot2 {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background: black;
+    margin-left: 10px;
+    top: 90px;
+  }
+  .listInsideBox {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    top: -300px;
+    transition:transform .2s ease;
+   background:rgb(255, 255, 255);
+  left: -10px;
+  }
+  .projectImage {
+    width: 400px;
+    height: 230px;
+    position: absolute;
+    top: 0px;
+    left: 300px;
+    margin-left: 100px;
+  }
+  
+  .listText {
+    position: absolute;
+  
+    left: 10px;
+    bottom: 50px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:750px){
+  .listInsideBox {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    top: -300px;
+    transition:transform .2s ease;
+   background:rgb(255, 255, 255);
+  left: -0px;
+  }
+  .projectImage {
+    width: 400px;
+    height: 230px;
+    position: absolute;
+    top: 0px;
+    left: 220px;
+    margin-left: 100px;
+  }
+  
+  .listText {
+    position: absolute;
+  
+    left: 10px;
+    bottom: 50px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .container {
+    top: 2550px;
+    left: -550px;
+  }
+  .viewProjectBox {
+    position: absolute;
+    left: -200px;
+    top: 350px;
+
+  }
+  .projects {
+    position: absolute;
+    left: 100px;
+    transform: translateX(-50%);
+    top: 150px;
+  }
+  .title {
+    position: relative;
+    width: 100%;
+    font-size: 2.5rem;
+    font-family: jakarta-bold;
+    margin-top: 50px;
+    margin-left: -300px;
+    top: 50px;
+  }
+  .dot1 {
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    background: black;
+    margin-left: 5px;
+    top: 35px;
+  }
+  .dot2 {
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    background: black;
+    margin-left: 5px;
+    top: 80px;
+  }
+  .listInsideBox {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    top: -290px;
+    transition:transform .2s ease;
+   background:rgb(255, 255, 255);
+  left: -0px;
+  }
+  .projectImage {
+    width: 400px;
+    height: 230px;
+    position: absolute;
+    top: 0px;
+    left: 220px;
+    margin-left: 100px;
+  }
+  
+  .listText {
+    position: absolute;
+  
+    left: 10px;
+    bottom: 50px;
+    width: 100%;
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    top: 2400px;
+    left: -520px;
+  }
+  .viewProjectBox {
+    position: absolute;
+    left: -250px;
+    top: 350px;
+  }
+  .projects {
+    position: absolute;
+    left: 50px;
+    top: 150px;
+    transform: translateX(-50%);
+  }
+  .title {
+    position: relative;
+    width: 100%;
+    font-size: 2rem;
+    font-family: jakarta-bold;
+    margin-top: 100px;
+    margin-left: -340px;
+  }
+  .dot1 {
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    background: black;
+    margin-left: 5px;
+    top: 25px;
+  }
+  .dot2 {
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    background: black;
+    margin-left: 5px;
+    top: 62px;
+  }
+  .listInsideBox {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    top: -310px;
+    transition:transform .2s ease;
+   background:rgb(255, 255, 255);
+  left: -0px;
+  }
+  .projectImage {
+    width: 400px;
+    height: 230px;
+    position: absolute;
+    top: 0px;
+    left: 220px;
+    margin-left: 100px;
+  }
+  
+  .listText {
+    position: absolute;
+  
+    left: 10px;
+    bottom: 50px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    top: 2350px;
+    left: -600px;
+  }
+  .viewProjectBox {
+    position: absolute;
+    left: -250px;
+    top: 350px;
+  }
+  .projects {
+    position: absolute;
+    left: 80px;
+    transform: translateX(-50%);
+    top: 100px;
+  }
+  .title {
+    position: relative;
+    width: 100%;
+    font-size: 2.5rem;
+    font-family: jakarta-bold;
+    margin-top: 50px;
+    margin-left: -340px;
+  }
+  .dot1 {
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    background: black;
+    margin-left: 5px;
+    top: 35px;
+  }
+  .dot2 {
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    background: black;
+    margin-left: 5px;
+    top: 80px;
+  }
+  .listInsideBox {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    top: -280px;
+    transition:transform .2s ease;
+   background:rgb(255, 255, 255);
+  left: 0px;
+  }
+  .projectImage {
+    width: 400px;
+    height: 230px;
+    position: absolute;
+    top: 0px;
+    left: 240px;
+    margin-left: 100px;
+  }
+  
+  .listText {
+    position: absolute;
+  
+    left: 10px;
+    bottom: 50px;
+    width: 100%;
+  }
+  .listBox {
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+    width: 100%;
+    position: relative;
+    top: 550px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    top: 2250px;
+    left: -650px;
+  }
+  .viewProjectBox {
+    position: absolute;
+    left: -250px;
+    top: 400px;
+  }
+  .projects {
+    position: absolute;
+    left: 70px;
+    transform: translateX(-50%);
+    top: 250px;
+  }
+  .title {
+    position: relative;
+    width: 100%;
+    font-size: 2rem;
+    font-family: jakarta-bold;
+    top: 150px;
+    margin-left: -340px;
+  }
+  .dot1 {
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    background: black;
+    margin-left: 5px;
+    top: 25px;
+  }
+  .dot2 {
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    background: black;
+    margin-left: 5px;
+    top: 60px;
+  }
+  .listInsideBox {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 250px;
+    height: 300px;
+    top: -200px;
+    transition:transform .2s ease;
+   background:rgb(255, 255, 255);
+  left: 00px;
+  }
+  .projectImage {
+    width: 350px;
+    height: 160px;
+    position: absolute;
+    top: 0px;
+    left: 145px;
+    margin-left: 100px;
+  }
+  
+  .listText {
+    position: absolute;
+  
+    left: 10px;
+    bottom: 50px;
+    width: 100%;
+  }
+  .listBox{
+    gap: 200px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .container {
+    top: 2220px;
+    left: -700px
+  }
+  .viewProjectBox {
+    position: absolute;
+    left: -100px;
+    top: 250px;
+  }
+  .projects {
+    position: absolute;
+    left: 0px;
+    transform: translateX(-50%);
+  }
+  .title {
+    position: relative;
+    width: 100%;
+    font-size: 1.5rem;
+    font-family: jakarta-bold;
+    margin-top: 50px;
+    margin-left: -200px;
+  }
+  .dot1 {
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    background: black;
+    margin-left: 5px;
+    top: 17px;
+  }
+  .dot2 {
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    background: black;
+    margin-left: 5px;
+    top: 45px;
+  }
+}
+
+

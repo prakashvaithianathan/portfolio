@@ -1,0 +1,33 @@
+[{
+    "education":[
+        {
+            "name":"Manakula Vinayagar Institute of Technology",
+            "course":"B.Tech in Electronics and Communication Engg.",
+            "duration":"2016-2020"
+        },
+        {
+            "name":"New Modern Vidhya Mandir Hr.Sec School",
+            "course":"HSC in Computer Science",
+            "duration":"2014-2016"
+        },
+        {
+            "name":"New Modern Vidhya Mandir Hr.Sec School",
+            "course":"SSC",
+            "duration":"2013-2014"
+        }
+    ]
+},
+{
+    "techCourses":[
+        {
+            "name":"Alpharive Tech. Pvt. Ltd",
+            "course":"Blockchain & Full-stack Developer",
+            "duration":"September 2021 - Present"
+        },
+        {
+            "name":"Freelance Full-stack Developer",
+            "course":"Full-stack Developer",
+            "duration":"July 2020 - September 2021"
+        }
+    ]
+}]

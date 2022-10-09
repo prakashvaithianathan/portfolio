@@ -1,0 +1,57 @@
+/* body{
+  color: white !important;
+  background-color:black !important;
+} */
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.container {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+}
+
+.arrow{
+  position: absolute;
+  z-index: 2432424;
+  bottom: 40%;
+  right: -100px;
+  /* right: 0; */
+  width: 300px;
+}
+.arrow:hover{
+  cursor: pointer;
+}
+
+.titleFont{
+  position: absolute;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+     display: flex;
+     font-family: jakarta-bold !important;
+     letter-spacing: 2px;
+}
+
+.dot{
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  background: linear-gradient(
+    86deg,
+    rgba(177, 108, 234, 1) 0%,
+    rgba(236, 98, 137, 1) 50%,
+    rgba(255, 142, 85, 1) 100%
+  );
+  bottom: 5px;
+  margin-left: 130px;
+  }
+
+  @media screen and (max-width:1200px){
+    .titleFont{
+      left: 40% !important;
+      top: 50% !important;
+    }
+  }

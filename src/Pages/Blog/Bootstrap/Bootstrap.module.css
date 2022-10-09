@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "jakarta-bold";
+    font-style: normal;
+    font-weight: normal;
+    src: local("SF-Pro-Regular"),
+      url("../../../../src/jakarta/PlusJakartaDisplay-Bold.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: "jakarta-medium";
+    font-style: normal;
+    font-weight: normal;
+    src: local("SF-Pro-Regular"),
+      url("../../../../src/jakarta/PlusJakartaDisplay-Medium.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "jakarta-light";
+    font-style: normal;
+    font-weight: normal;
+    src: local("SF-Pro-Regular"),
+      url("../../../../src/jakarta/PlusJakartaDisplay-Light.otf") format("opentype");
+  }
+
+
+.container{
+     position: absolute;
+     width: 80vw;
+     left: 50%;
+     transform: translateX(-50%);
+     top: 10%;
+}
+.container>p{
+    width: 100%;
+    line-height: 30px;
+}
+.container>img{
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin:50px 0px;
+    width: 70%;
+    height: auto;
+    padding: 20px;
+}
+
+
+
+.container>h1{
+    width: 100%;
+    margin: 50px 0;
+    font-family: jakarta-bold;
+    letter-spacing:3px;
+    /* font-size: 3vw; */
+}

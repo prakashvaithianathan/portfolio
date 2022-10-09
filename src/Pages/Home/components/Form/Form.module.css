@@ -1,0 +1,104 @@
+.form{
+    position: relative;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    top: 8650px;
+   
+}
+.mainForm{
+    left: 40%;
+    transform: translateX(-50%);
+
+}
+.title{
+    background: -webkit-linear-gradient(
+        360deg,
+        rgb(177, 108, 234) 0%,
+        rgb(225, 99, 155) 30%,
+        rgb(255, 104, 101) 60%,
+        rgb(255, 133, 88) 90%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: jakarta-bold;
+      font-size: 2rem;
+      width: 100%;
+}
+
+.inputLabel{
+    width: 200px !important;
+}
+
+.input{
+    width: 400px !important;
+}
+.submit{
+    width: 100px !important;
+}
+.warning{
+    color: red;
+    font-weight: 400;
+    font-size: .80rem;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    width: 500px;
+}
+
+.modal{
+    
+    color: rgb(0, 89, 255);
+    font-family: jakarta-medium;
+    letter-spacing:2px;
+    font-weight: 200;
+    width: 500px;
+}
+
+.title{
+    position: relative;
+    width: 250px;
+    left: 45%;
+    transform: translateX(-50%)
+
+}
+
+@media screen and (max-width:2500px){
+    .title{
+        left: 50%;
+    }
+}
+@media screen and (max-width:1500px){
+    .title{
+        left: 55%;
+    }
+    .mainForm{
+        left: 40%;
+    }
+}
+@media screen and (max-width:1000px){
+    .title{
+        left: 60%;
+    }
+}
+
+@media screen and (max-width:800px){
+    .title{
+        left: 65%;
+    }
+}
+
+@media screen and (max-width:700px){
+    .title{
+        left: 70%;
+    }
+}
+
+@media screen and (max-width:500px){
+    .title{
+        left: 80%;
+    }
+    .input{
+        width: 300px !important;
+    }
+}

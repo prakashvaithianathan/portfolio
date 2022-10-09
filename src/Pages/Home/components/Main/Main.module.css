@@ -1,0 +1,1496 @@
+@font-face {
+  font-family: "jakarta-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF-Pro-Regular"),
+    url("../../../../jakarta/PlusJakartaDisplay-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "jakarta-medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF-Pro-Regular"),
+    url("../../../../jakarta/PlusJakartaDisplay-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "jakarta-light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF-Pro-Regular"),
+    url("../../../../jakarta/PlusJakartaDisplay-Light.otf") format("opentype");
+}
+
+
+.container {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content:space-between;
+  /* overflow:scroll; */
+  left: 50%;
+  transform: translateX(-50%);
+  
+}
+
+img{
+  position: absolute;
+  right: -450px;
+  transform:translateX(-100%);
+  width: 450px;
+  height: 400px;
+  top: 250px;
+}
+.titleContainer {
+  position: absolute;
+  top: 200px;
+  width: auto;
+  overflow: hidden;
+ 
+}
+
+.title {
+  position: relative;
+  width: auto;
+}
+.title > h1 {
+  font-weight: bolder;
+  font-size: 5rem;
+  width: auto;
+  font-family: jakarta-bold;
+}
+
+.colorTitle {
+  background: -webkit-linear-gradient(
+    360deg,
+    rgb(177, 108, 234) 0%,
+    rgb(225, 99, 155) 30%,
+    rgb(255, 104, 101) 60%,
+    rgb(255, 133, 88) 90%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about {
+  width: auto;
+  margin-top: 30px;
+}
+.about > p {
+  width: auto;
+  font-family: jakarta-light;
+  font-size: 1.2rem;
+  color: grey;
+  letter-spacing: 2px;
+}
+
+.hireMe{
+    display: flex;
+    width:auto;
+    gap: 300px;
+    align-items: center;
+    margin: 30px 0 0 30px;
+    height: 100px;
+}
+.bookCall{
+    width: 200px;
+    background:black;
+    font-family: jakarta-medium;
+    color: white;
+    outline:none;
+    border: none;
+    height: 50px;
+   position: relative;
+   z-index: 1;
+   transition: transform .5s ease;
+}
+.linearGradientBox{
+    content: "";
+    position: absolute;
+    left: 38px;
+    width: 200px;
+    height: 50px;
+    top: 410px;
+    background:linear-gradient(
+        90deg,
+        rgb(177, 108, 234) 0%,
+        rgb(225, 99, 155) 30%,
+        rgb(255, 104, 101) 60%,
+        rgb(255, 133, 88) 90%
+      );
+      
+}
+.bookCall:hover{
+  cursor: pointer;
+  transform: translate(7.5px,9.5px);
+}
+
+
+.dot {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    background: black;
+    bottom: 15px;
+    margin-left: 10px;
+    }
+
+.hireMe>div>p{
+    width: 200px;
+  font-family: jakarta-medium;
+}
+
+.hireMe>div>p:hover{
+  cursor: pointer;
+}
+.download{
+  position: relative;
+}
+
+.arrowLeft{
+  position: absolute;
+  transform: translateX(5px);
+  transition:all .2s ease;
+  }
+  
+  .arrowRight{
+    position: absolute;
+    transform: translateX(15px);
+  transition:all .2s ease;
+
+  }
+
+  .trustedBox{
+    position:absolute;
+    left: 40%;
+    margin-top: 750px;
+    text-align: center;
+    background: red;
+    transform: translate(-50%,-50%);
+    
+   }
+   .trustedBox>p{
+     font-family: jakarta-light;
+     width: 200px;
+     font-size: 2rem;
+     font-weight: 900;
+   }
+   .images{
+     position: absolute;
+     display: grid;
+     justify-content:start;
+     margin: -250px 0 0 -150px;
+     background:red;
+     width: 1000px;
+   }
+   .images>img:nth-child(1){
+     position: absolute;
+     left: 0px;
+     /* width: 100px;
+     height: 100px; */
+   }
+ 
+   .images>img:nth-child(2){
+     position: absolute;
+     left: 250px;
+     /* width: 100px;
+     height: 100px; */
+   }
+   .images>img:nth-child(3){
+     position: absolute;
+     right: 300px;
+     /* width: 100px;
+     height: 100px; */
+   }
+   
+ 
+   .images>img:nth-child(4){
+     position: absolute;
+     right: 50px;
+     /* width: 100px;
+     height: 100px; */
+   }
+   
+   
+   .images>img{
+     width: 200px;
+      height: 50px;
+   }
+   .techTitle{
+     position: relative;
+     width: 100%;
+     background-color:red
+   }
+ 
+   .typeFont{
+     position: absolute;
+     width: 100vw;
+     left:80%;
+     top: 700px;
+     transform: translateX(-50%);
+     font-family: jakarta-bold;
+  letter-spacing:2px;
+font-size: 4vw;
+   }
+.typeColor{
+  background: -webkit-linear-gradient(
+    360deg,
+    rgb(177, 108, 234) 0%,
+    rgb(225, 99, 155) 30%,
+    rgb(255, 104, 101) 60%,
+    rgb(255, 133, 88) 90%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: jakarta-bold;
+}
+
+.flexContainerMain{
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  flex-wrap:  wrap !important;
+  height: 100vh  !important;
+  width: 100vw !important;
+}
+
+.photoContainer{
+  width: 400px !important;
+  height: 500px !important;
+  left: 100% ;
+  top: 150px;
+}
+
+
+
+   @media screen and (min-width:2000px){
+    .flexContainerMain{
+      display: flex !important;
+      justify-content: space-around !important;
+      align-items: center !important;
+      flex-wrap:  wrap !important;
+      height: 100vh  !important;
+      width: 70vw !important;
+      position: absolute !important;
+      left: 50% !important;
+      transform: translateX(-70%) !important;
+    }
+     .typeFont{
+       left: 80%;
+       font-size: 5rem;
+     }
+     
+   }
+   @media screen and (min-width:1500px){
+    .photoContainer{
+      width: 400px !important;
+      height: 500px !important;
+      left: 100% ;
+      top: 150px;
+    }
+        
+   }
+  
+  @media screen and (max-width:1500px){
+    .typeFont{
+      left: 70%;
+      top: 750px;
+      font-size: 4rem;
+    }
+    img{
+      position: absolute;
+      right: -600px;
+      transform:translateX(-100%);
+      width: 500px;
+      height: 500px;
+      top: 150px;
+      z-index: -3434;
+    }
+    .images{
+      position: absolute;
+      display: grid;
+      justify-content:start;
+      margin: -250px 0 0 -120px;
+      background:red;
+      width: 800px;
+    }
+    .images>img{
+      width: 150px;
+       height: 30px;
+    }
+    .images>img:nth-child(1){
+      position: absolute;
+      left: 0px;
+      
+    }
+  
+    .images>img:nth-child(2){
+      position: absolute;
+      left: 220px;
+      
+    }
+    .images>img:nth-child(3){
+      position: absolute;
+      right: 220px;
+      
+    }
+    
+  
+    .images>img:nth-child(4){
+      position: absolute;
+      right: 0px;
+      
+    }
+    
+  }
+
+  @media screen and (max-width:1200px){
+    .photoContainer{
+      width: 300px !important;
+      height: 400px !important;
+      left: 40% ;
+      transform: translateX(-60%);
+      top: 680px;
+    }
+    .typeFont{
+      left: 50%;
+      top: 1100px;
+      font-size: 3.5rem;
+      width: 75vw;
+    }
+    .container{
+    /* margin-left: 100px; */
+    margin-top: -250px;
+    left: 50%;
+      transform: translateX(-40%)
+    }
+    img{
+      position: absolute;
+      left: 90%;
+      transform:translateX(-150%);
+      width: 500px;
+      height: 500px;
+      top: 700px;
+    }
+    .titleContainer {
+      position: absolute;
+      top: 200px;
+      width: auto;
+      overflow: hidden;
+      
+      /* transform: translateX(30%); */
+    }
+    
+    .trustedBox{
+      position:absolute;
+      left: 20%;
+      margin-top: 1100px;
+      text-align: center;
+      background: red;
+      transform: translate(-50%,-50%);
+      z-index: 234234;
+     }
+     .trustedBox>p{
+       font-family: jakarta-light;
+       width: 200px;
+       font-size: 2rem;
+       font-weight: 900;
+     }
+     .images{
+       position: absolute;
+       display: grid;
+       justify-content:center;
+       margin: -700px 0 0 -50px;
+       background:red;
+       width: 1000px;
+     }
+     .images>img:nth-child(1){
+       position: absolute;
+       left: 200px;
+       /* width: 100px;
+       height: 100px; */
+     }
+   
+     .images>img:nth-child(2){
+       position: absolute;
+       left: 500px;
+       /* width: 100px;
+       height: 100px; */
+     }
+     .images>img:nth-child(3){
+       position: absolute;
+       left: 200px;
+       top: 800px;
+       /* width: 100px;
+       height: 100px; */
+     }
+     
+   
+     .images>img:nth-child(4){
+       position: absolute;
+       left: 500px;
+       top: 800px;
+       /* width: 100px;
+       height: 100px; */
+     }
+     
+     
+     .images>img{
+       width: 200px;
+        height: 50px;
+     }
+  }
+
+  
+  @media screen and (max-width:1000px){
+    .photoContainer{
+      width: 300px !important;
+      height: 400px !important;
+      left: 40% ;
+      transform: translateX(-60%);
+      top: 680px;
+    }
+    .container{
+      /* margin-left: 100px; */
+      margin-top: -250px;
+      position:absolute;
+      left: 50%;
+        transform: translateX(-40%)
+      }
+      img{
+        position: absolute;
+        left: 110%;
+        transform:translateX(-150%);
+        width: 500px;
+        height: 500px;
+        top: 650px;
+      }
+      .titleContainer {
+        position: absolute;
+        top: 200px;
+        width: auto;
+        overflow: hidden;
+       
+        /* transform: translateX(30%); */
+      }
+     
+      
+  }
+
+  @media screen and (max-width:900px){
+    .photoContainer{
+      width: 400px !important;
+      height: 500px !important;
+      left: 50% ;
+      transform: translateX(-60%);
+      top: 610px;
+    }
+    .container{
+      /* margin-left: 100px; */
+      margin-top: -250px;
+      left: 50%;
+        transform: translateX(-40%)
+      }
+      img{
+        position: absolute;
+        left: 100%;
+        transform:translateX(-130%);
+        width: 500px;
+        height: 500px;
+        top: 650px;
+      }
+      .title>h1{
+        font-size: 4rem;
+      }
+      .titleContainer {
+        position: absolute;
+        top: 200px;
+        width: auto;
+        overflow: hidden;
+        
+        /* transform: translateX(30%); */
+      }
+      .trustedBox{
+        position:absolute;
+        left: 20%;
+        margin-top: 1100px;
+        text-align: center;
+        background: red;
+        transform: translate(-50%,-50%);
+       }
+       .trustedBox>p{
+         font-family: jakarta-light;
+         width: 200px;
+         font-size: 2rem;
+         font-weight: 900;
+       }
+       .images{
+         position: absolute;
+         display: grid;
+         justify-content:center;
+         margin: -700px 0 0 -80px;
+         background:red;
+         width: 1000px;
+       }
+       .linearGradientBox{
+        content: "";
+        position: absolute;
+        left: 40px;
+        width: 200px;
+        height: 50px;
+        top: 360px;
+        background:linear-gradient(
+            90deg,
+            rgb(177, 108, 234) 0%,
+            rgb(225, 99, 155) 30%,
+            rgb(255, 104, 101) 60%,
+            rgb(255, 133, 88) 90%
+          );
+    }
+  }
+  @media screen and (max-width:800px){
+    .photoContainer{
+      width: 400px !important;
+      height: 500px !important;
+      left: 50% ;
+      transform: translateX(-60%);
+      top: 590px;
+    }
+    .typeFont{
+      left: 50%;
+      top: 1050px;
+      font-size: 3.5rem;
+      width: 80vw;
+    }
+    .container{
+      /* margin-left: 100px; */
+      margin-top: -250px;
+      left: 50%;
+        transform: translateX(-50%)
+      }
+      img{
+        position: absolute;
+        left: 90%;
+        transform:translateX(-100%);
+        width: 500px;
+        height: 500px;
+        top: 600px;
+      }
+      .title>h1{
+        font-size: 4rem;
+      }
+      .titleContainer {
+        position: absolute;
+        top: 200px;
+        width: auto;
+        overflow: hidden;
+        
+        /* transform: translateX(30%); */
+      }
+      .trustedBox{
+        position:absolute;
+        left: 25%;
+        margin-top: 1100px;
+        text-align: center;
+        background: red;
+        transform: translate(-50%,-50%);
+        z-index: 234234;
+       }
+       .trustedBox>p{
+         font-family: jakarta-light;
+         width: 200px;
+         font-size: 2rem;
+         font-weight: 900;
+       }
+       .images{
+         position: absolute;
+         display: grid;
+         justify-content:center;
+         margin: -700px 0 0 -150px;
+         background:red;
+         width: 1000px;
+       }
+       .linearGradientBox{
+        content: "";
+        position: absolute;
+        left: 40px;
+        width: 200px;
+        height: 50px;
+        top: 360px;
+        background:linear-gradient(
+            90deg,
+            rgb(177, 108, 234) 0%,
+            rgb(225, 99, 155) 30%,
+            rgb(255, 104, 101) 60%,
+            rgb(255, 133, 88) 90%
+          );
+    }
+    .hireMe{
+      display: flex;
+      width:auto;
+      gap: 250px;
+      align-items: center;
+      /* justify-content:center; */
+      margin: 30px 0 0 30px;
+      height: 100px;
+      /* position: absolute; */
+  }
+    .hireMe>div>button:hover{
+      cursor: pointer;
+      transform: translate(10px,12px);
+    }
+  }
+
+  @media screen and (max-width:750px){
+    .photoContainer{
+      width: 400px !important;
+      height: 500px !important;
+      left: 50% ;
+      transform: translateX(-60%);
+      top: 550px;
+    }
+    .container{
+      /* margin-left: 100px; */
+      margin-top: -250px;
+      left: 50%;
+        transform: translateX(-40%)
+      }
+      img{
+        position: absolute;
+        left:65%;
+        transform:translateX(-80%);
+        width: 500px;
+        height: 500px;
+        top: 600px;
+      }
+      .hireMe{
+        display: flex;
+        width:auto;
+        gap: 250px;
+        align-items: center;
+        /* justify-content:center; */
+        margin: 30px 0 0 30px;
+        height: 100px;
+    }
+      .titleContainer {
+        position: absolute;
+        top: 200px;
+        width: auto;
+        overflow: hidden;
+       
+        /* transform: translateX(30%); */
+      }
+      .title {
+        position: relative;
+        width: auto;
+      }
+      .title > h1 {
+        font-weight: bolder;
+        font-size: 3rem;
+        width: auto;
+        font-family: jakarta-bold;
+      }
+      .about > p {
+        width: auto;
+        font-family: jakarta-light;
+        font-size: 0.8rem;
+        color: grey;
+        letter-spacing: 2px;
+      }
+      .linearGradientBox{
+        content: "";
+        position: absolute;
+        left: 40px;
+        width: 200px;
+        height: 50px;
+        top: 290px;
+        background:linear-gradient(
+            90deg,
+            rgb(177, 108, 234) 0%,
+            rgb(225, 99, 155) 30%,
+            rgb(255, 104, 101) 60%,
+            rgb(255, 133, 88) 90%
+          );
+    }
+    
+    .hireMe>div>button:hover{
+      cursor: pointer;
+      transform: translate(10px,12px);
+    }
+    .trustedBox{
+      position:absolute;
+      left: 20%;
+      margin-top: 1000px;
+      text-align: center;
+      background: red;
+      transform: translate(-50%,-50%);
+      z-index: 234234;
+     }
+     .trustedBox>p{
+       font-family: jakarta-light;
+       width: 200px;
+       font-size: 2rem;
+       font-weight: 900;
+     }
+     .images{
+       position: absolute;
+       display: grid;
+       justify-content:center;
+       margin: -650px 0 0 -150px;
+       background:red;
+       width: 1000px;
+     }
+  }
+
+
+  @media screen and (max-width:600px){
+    .photoContainer{
+      width: 300px !important;
+      height: 400px !important;
+      left: 50% ;
+      transform: translateX(-60%);
+      top: 590px;
+    }
+    .typeFont{
+      left: 50%;
+      top: 1000px;
+      font-size: 2.5rem;
+      width: 60vw;
+    }
+    .container{
+      /* margin-left: 100px; */
+      margin-top: -300px;
+      left: 40%;
+        transform: translateX(-42%)
+      }
+      img{
+        position: absolute;
+        left: 75%;
+        transform:translateX(-80%);
+        width: 500px;
+        height: 500px;
+        top: 575px;
+      }
+      .titleContainer {
+        position: absolute;
+        top: 200px;
+        width: auto;
+        overflow: hidden;
+        
+        /* transform: translateX(30%); */
+      }
+      .title {
+        position: relative;
+        width: auto;
+      }
+      .title > h1 {
+        font-weight: bolder;
+        font-size: 3rem;
+        width: auto;
+        font-family: jakarta-bold;
+      }
+      .about > p {
+        width: auto;
+        font-family: jakarta-light;
+        font-size: 1rem;
+        color: grey;
+        letter-spacing: 2px;
+      }
+      .linearGradientBox{
+        content: "";
+        position: absolute;
+        left: 40px;
+        width: 150px;
+        height: 50px;
+        top: 335px;
+        background:linear-gradient(
+            90deg,
+            rgb(177, 108, 234) 0%,
+            rgb(225, 99, 155) 30%,
+            rgb(255, 104, 101) 60%,
+            rgb(255, 133, 88) 90%
+          );
+    }
+    .hireMe>div>button:hover{
+      cursor: pointer;
+      transform: translate(10px,12px);
+    }
+    
+    .dot {
+      width: 12px;
+      height: 12px;
+      position: absolute;
+      background: black;
+      bottom: 8px;
+      margin-left: 10px;
+      }
+      .hireMe>div>button{
+        width: 150px;
+        background:black;
+        font-family: jakarta-medium;
+        color: white;
+        outline:none;
+        border: none;
+        height: 50px;
+       position: relative;
+       z-index: 1;
+       transition: transform .5s ease;
+    }
+    .hireMe>div>p{
+      width: 150px;
+      position: absolute;
+      right: 20px;
+    }
+    .trustedBox{
+      position:absolute;
+      left: 20%;
+      margin-top: 1000px;
+      text-align: center;
+      background: red;
+      transform: translate(-50%,-50%);
+      z-index: 234234;
+     }
+     .trustedBox>p{
+       font-family: jakarta-light;
+       width: 200px;
+       font-size: 2rem;
+       font-weight: 900;
+     }
+     .images{
+       position: absolute;
+       display: grid;
+       justify-content:center;
+       margin: -600px 0 0 -150px;
+       background:red;
+       width: 1000px;
+     }
+     .images>img:nth-child(1){
+      position: absolute;
+      left: 200px;
+      /* width: 100px;
+      height: 100px; */
+    }
+  
+    .images>img:nth-child(2){
+      position: absolute;
+      left: 450px;
+      /* width: 100px;
+      height: 100px; */
+    }
+    .images>img:nth-child(3){
+      position: absolute;
+      left: 200px;
+      top: 700px;
+      /* width: 100px;
+      height: 100px; */
+    }
+    
+  
+    .images>img:nth-child(4){
+      position: absolute;
+      left: 450px;
+      top: 700px;
+      /* width: 100px;
+      height: 100px; */
+    }
+    
+    
+    .images>img{
+      width: 200px;
+       height: 50px;
+    }
+     
+  }
+
+  @media screen and (max-width:500px){
+    .photoContainer{
+      width: 300px !important;
+      height: 400px !important;
+      left: 50% ;
+      transform: translateX(-60%);
+      top: 530px;
+    }
+    .typeFont{
+      left: 40%;
+      top: 1000px;
+      font-size: 2rem;
+      width: 60vw;
+    }
+    .container{
+      /* margin-left: 100px; */
+      margin-top: -300px;
+      left: 50%;
+        transform: translateX(-40%)
+      }
+      img{
+        position: absolute;
+        left: 80%;
+        transform:translateX(-85%);
+        width: 500px;
+        height: 500px;
+        top: 550px;
+      }
+      .titleContainer {
+        position: absolute;
+        top: 200px;
+        width: auto;
+        overflow: hidden;
+        
+        /* transform: translateX(30%); */
+      }
+      .title {
+        position: relative;
+        width: auto;
+      }
+      .title > h1 {
+        font-weight: bolder;
+        font-size: 2rem;
+        width: auto;
+        font-family: jakarta-bold;
+      }
+      .about > p {
+        width: auto;
+        font-family: jakarta-light;
+        font-size: .8rem;
+        color: grey;
+        letter-spacing: 2px;
+      }
+      .linearGradientBox{
+        content: "";
+        position: absolute;
+        left: 40px;
+        width: 100px;
+        height: 50px;
+        top: 265px;
+        background:linear-gradient(
+            90deg,
+            rgb(177, 108, 234) 0%,
+            rgb(225, 99, 155) 30%,
+            rgb(255, 104, 101) 60%,
+            rgb(255, 133, 88) 90%
+          );
+    }
+    .hireMe>div>button:hover{
+      cursor: pointer;
+      transform: translate(10px,12px);
+    }
+    .dot {
+      width: 8px;
+      height: 8px;
+      position: absolute;
+      background: black;
+      margin-top: 200px;
+      margin-left: 10px;
+      }
+      .hireMe>div>button{
+        width: 100px;
+        background:black;
+        font-family: jakarta-medium;
+        color: white;
+        outline:none;
+        border: none;
+        height: 50px;
+       position: relative;
+       z-index: 1;
+       transition: transform .5s ease;
+    }
+    .trustedBox{
+      position:absolute;
+      left: 20%;
+      margin-top: 900px;
+      text-align: center;
+      background: red;
+      transform: translate(-50%,-50%);
+      z-index: 234234;
+     }
+     .trustedBox>p{
+       font-family: jakarta-light;
+       width: 200px;
+       font-size: 2rem;
+       font-weight: 900;
+     }
+     .images{
+       position: absolute;
+       display: grid;
+       justify-content:center;
+       margin: -550px 0 0 -160px;
+       background:red;
+       width: 1000px;
+     }
+     .images>img:nth-child(1){
+      position: absolute;
+      left: 200px;
+      /* width: 100px;
+      height: 100px; */
+    }
+  
+    .images>img:nth-child(2){
+      position: absolute;
+      left: 400px;
+      /* width: 100px;
+      height: 100px; */
+    }
+    .images>img:nth-child(3){
+      position: absolute;
+      left: 200px;
+      top: 650px;
+      /* width: 100px;
+      height: 100px; */
+    }
+    
+  
+    .images>img:nth-child(4){
+      position: absolute;
+      left: 400px;
+      top: 650px;
+      /* width: 100px;
+      height: 100px; */
+    }
+    
+    
+    .images>img{
+      width: 150px;
+       height: 40px;
+    }
+  }
+
+  @media screen and (max-width:450px){
+    .typeFont{
+      left: 40%;
+      top: 1000px;
+      font-size: 2rem;
+      width: 60vw;
+    }
+    .container{
+      /* margin-left: 100px; */
+      margin-top: -300px;
+      left: 50%;
+        transform: translateX(-45%)
+      }
+      .hireMe{
+        margin-top: 0px;
+      }
+      img{
+        position: absolute;
+        left: 90%;
+        transform:translateX(-85%);
+        width: 500px;
+        height: 500px;
+        top: 520px;
+      }
+      .titleContainer {
+        position: absolute;
+        top: 200px;
+        width: auto;
+        overflow: hidden;
+        
+        /* transform: translateX(30%); */
+      }
+      .title {
+        position: relative;
+        width: auto;
+      }
+      .title > h1 {
+        font-weight: bolder;
+        font-size: 2rem;
+        width: auto;
+        font-family: jakarta-bold;
+      }
+      .about > p {
+        width: auto;
+        font-family: jakarta-light;
+        font-size: .8rem;
+        color: grey;
+        letter-spacing: 2px;
+      }
+      .linearGradientBox{
+        content: "";
+        position: absolute;
+        left: 40px;
+        width: 100px;
+        height: 50px;
+        top: 235px;
+        background:linear-gradient(
+            90deg,
+            rgb(177, 108, 234) 0%,
+            rgb(225, 99, 155) 30%,
+            rgb(255, 104, 101) 60%,
+            rgb(255, 133, 88) 90%
+          );
+    }
+    .hireMe>div>button:hover{
+      cursor: pointer;
+      transform: translate(10px,12px);
+    }
+    .dot {
+      width: 8px;
+      height: 8px;
+      position: absolute;
+      background: black;
+      margin-top: 200px;
+      margin-left: 10px;
+      }
+      .hireMe>div>button{
+        width: 100px;
+        background:black;
+        font-family: jakarta-medium;
+        color: white;
+        outline:none;
+        border: none;
+        height: 50px;
+       position: relative;
+       z-index: 1;
+       transition: transform .5s ease;
+    }
+    
+  }
+
+
+  @media screen and (max-width:400px){
+    .typeFont{
+      left: 50%;
+      top: 950px;
+      font-size: 1.5rem;
+      width: 60vw;
+    }
+    .container{
+      /* margin-left: 100px; */
+      margin-top: -300px;
+      left: 50%;
+        transform: translateX(-50%);
+        width: 350px;
+      }
+      .hireMe{
+        margin-top: 0px;
+      }
+      img{
+        position: absolute;
+        left: 70%;
+        transform:translateX(-70%);
+        width: 500px;
+        height: 500px;
+        top: 500px;
+      }
+      .titleContainer {
+        position: absolute;
+        top: 200px;
+        width: auto;
+        overflow: hidden;
+        
+        /* transform: translateX(30%); */
+      }
+      .title {
+        position: relative;
+        width: auto;
+      }
+      .title > h1 {
+        font-weight: bolder;
+        font-size: 2rem;
+        width: auto;
+        font-family: jakarta-bold;
+        
+      }
+      .about > p {
+        width: 100%;
+        font-family: jakarta-light;
+        font-size: 1rem;
+        color: grey;
+        letter-spacing: 2px;
+      }
+      .linearGradientBox{
+        content: "";
+        position: absolute;
+        left: 40px;
+        width: 100px;
+        height: 50px;
+        top: 250px;
+        background:linear-gradient(
+            90deg,
+            rgb(177, 108, 234) 0%,
+            rgb(225, 99, 155) 30%,
+            rgb(255, 104, 101) 60%,
+            rgb(255, 133, 88) 90%
+          );
+    }
+    .hireMe>div>button:hover{
+      cursor: pointer;
+      transform: translate(10px,12px);
+    }
+    .dot {
+      width: 8px;
+      height: 8px;
+      position: absolute;
+      background: black;
+      margin-top: 200px;
+      margin-left: 10px;
+      }
+      .hireMe>div>button{
+        width: 100px;
+        background:black;
+        font-family: jakarta-medium;
+        color: white;
+        outline:none;
+        border: none;
+        height: 50px;
+       position: relative;
+       z-index: 1;
+       transition: transform .5s ease;
+    }
+    .trustedBox{
+      position:absolute;
+      left: 20%;
+      margin-top: 850px;
+      text-align: center;
+      background: red;
+      transform: translate(-50%,-50%);
+      z-index: 234234;
+     }
+     .trustedBox>p{
+       font-family: jakarta-light;
+       width: 200px;
+       font-size: 1.5rem;
+       font-weight: 900;
+     }
+     .images{
+       position: absolute;
+       display: grid;
+       justify-content:center;
+       margin: -550px 0 0 -160px;
+       background:red;
+       width: 1000px;
+     }
+     .images>img:nth-child(1){
+      position: absolute;
+      left: 200px;
+      /* width: 100px;
+      height: 100px; */
+    }
+  
+    .images>img:nth-child(2){
+      position: absolute;
+      left: 350px;
+      /* width: 100px;
+      height: 100px; */
+    }
+    .images>img:nth-child(3){
+      position: absolute;
+      left: 200px;
+      top: 600px;
+      /* width: 100px;
+      height: 100px; */
+    }
+    
+  
+    .images>img:nth-child(4){
+      position: absolute;
+      left: 350px;
+      top: 600px;
+      /* width: 100px;
+      height: 100px; */
+    }
+    
+    
+    .images>img{
+      width: 100px;
+       height: 30px;
+    }
+    
+  }
+
+  @media screen and (max-width:350px){
+    .container{
+      /* margin-left: 100px; */
+      margin-top: -300px;
+      left: 50%;
+        transform: translateX(-52%);
+        width: 300px;
+      }
+      .hireMe{
+        margin-top: 0px;
+        position:relative;
+      }
+      img{
+        position: absolute;
+        left: 60%;
+        transform:translateX(-60%);
+        width: 250px;
+        height: 250px;
+        top: 550px;
+      }
+      .titleContainer {
+        position: absolute;
+        top: 200px;
+        width: auto;
+        overflow: hidden;
+        
+        /* transform: translateX(30%); */
+      }
+      .title {
+        position: relative;
+        width: auto;
+      }
+      .title > h1 {
+        font-weight: bolder;
+        font-size: 2rem;
+        width: auto;
+        font-family: jakarta-bold;
+        
+      }
+      .about > p {
+        width: 100%;
+        font-family: jakarta-light;
+        font-size: 1rem;
+        color: grey;
+        letter-spacing: 2px;
+      }
+      .linearGradientBox{
+        content: "";
+        position: absolute;
+        left: 10px;
+        width: 100px;
+        height: 50px;
+        top: 40px;
+        background:linear-gradient(
+            90deg,
+            rgb(177, 108, 234) 0%,
+            rgb(225, 99, 155) 30%,
+            rgb(255, 104, 101) 60%,
+            rgb(255, 133, 88) 90%
+          );
+    }
+    .hireMe>div>button:hover{
+      cursor: pointer;
+      transform: translate(10px,12px);
+    }
+    .dot {
+      width: 8px;
+      height: 8px;
+      position: absolute;
+      background: black;
+      margin-top: 200px;
+      margin-left: 10px;
+      }
+      .hireMe>div>button{
+        width: 100px;
+        background:black;
+        font-family: jakarta-medium;
+        color: white;
+        outline:none;
+        border: none;
+        height: 50px;
+       position: relative;
+       z-index: 1;
+       transition: transform .5s ease;
+    }
+   
+  }
+
+  @media screen and (max-width:300px){
+    .container{
+      /* margin-left: 100px; */
+      margin-top: -300px;
+      left: 50%;
+        transform: translateX(-60%);
+        width: 100vw;
+        
+      }
+      .hireMe{
+        margin-top: 0px;
+        position:relative;
+      }
+      img{
+        position: absolute;
+        left: 60%;
+        transform:translateX(-50%);
+        width: 250px;
+        height: 250px;
+        top: 550px;
+      }
+      .titleContainer {
+        position: absolute;
+        top: 200px;
+        width:auto;
+        overflow: hidden;
+        /* transform: translateX(30%); */
+      }
+      .title {
+        position: relative;
+        width: auto;
+      }
+      .title > h1 {
+        font-weight: bolder;
+        font-size: 1.5rem;
+        width: auto;
+        font-family: jakarta-bold;
+        margin-left: 50px;
+      }
+      .about > p {
+        width: 100%;
+        font-family: jakarta-light;
+        font-size: 1rem;
+        color: grey;
+        letter-spacing: 2px;
+        width: 100vw;
+        margin-left: 30px;
+      }
+      /* .linearGradientBox{
+        content: "";
+        position: absolute;
+        left: 10px;
+        width: 100px;
+        height: 50px;
+        top: 40px;
+        background:linear-gradient(
+            90deg,
+            rgb(177, 108, 234) 0%,
+            rgb(225, 99, 155) 30%,
+            rgb(255, 104, 101) 60%,
+            rgb(255, 133, 88) 90%
+          );
+    } */
+    .hireMe>div>button:hover{
+      cursor: pointer;
+      transform: translate(10px,12px);
+    }
+    .dot {
+      width: 8px;
+      height: 8px;
+      position: absolute;
+      background: black;
+      margin-top: 200px;
+      margin-left: 10px;
+      }
+      .hireMe>div>button{
+        width: 100px;
+        background:black;
+        font-family: jakarta-medium;
+        color: white;
+        outline:none;
+        border: none;
+        height: 50px;
+       position: relative;
+       z-index: 1;
+       transition: transform .5s ease;
+    }
+   
+  }
+
+  
+
+  
+
+
+/* 
+
+
+  .photo>img{
+    filter:contrast(70%) saturate(150%) grayscale(100%) opacity(.7);
+    /* border-radius:30% */
+   /* -webkit-backdrop-filter: contrast(70%) saturate(150%) grayscale(100%) opacity(.7); */
+  /* }
+  .photo>img:hover{
+    cursor: pointer;
+    filter:contrast(70%) saturate(150%) grayscale(0%) opacity(.8);
+    -webkit-backdrop-filter: contrast(70%) saturate(150%) grayscale(0%) opacity(.8);
+    /* border-radius:30% */
+   
+  /* }  */

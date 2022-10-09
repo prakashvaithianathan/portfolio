@@ -1,0 +1,605 @@
+@font-face{
+  font-family: 'jakarta';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SF-Pro-Regular'), 
+  url('../../../../jakarta/PlusJakartaDisplay-Bold.otf') 
+  format('opentype');
+  }
+  
+.navbar {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 0px;
+  padding-top: 50px;
+  z-index: 10;
+  background:white;
+  z-index: 9999999 !important;
+}
+
+
+
+.logo_font {
+letter-spacing: 1px;
+font-weight:bolder;
+width: 200px;
+position: relative;
+font-family: jakarta;
+
+}
+
+/* for main css */
+.list{
+  /* margin-right: 500px; */
+  font-size: 20px;
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  width: 600px;
+ 
+}
+ .list>li {
+list-style-type: none;
+font-size: 1.2rem;
+text-align: center;
+font-weight: 600;
+position: relative;
+
+}
+
+
+
+.book{
+ 
+  margin-left: -20px;
+}
+.book{
+  display: flex; 
+  width: 100px;
+  }
+  .bookBox{
+  display: flex;
+  width: 120px;
+  transform:translateX(0px);
+  align-items: center;
+  }
+
+
+
+
+
+.dot {
+width: 5px;
+height: 5px;
+position: absolute;
+background: rgb(177, 108, 234);
+background: linear-gradient(
+  86deg,
+  rgba(177, 108, 234, 1) 0%,
+  rgba(236, 98, 137, 1) 50%,
+  rgba(255, 142, 85, 1) 100%
+);
+bottom: 5px;
+margin-left: 5px;
+}
+
+/* .arrowLeft{
+transform: translateX(-10px);
+transition:all .2s ease;
+}
+
+.arrowRight{
+transform: translateX(0px);
+transition:all .2s ease;
+} */
+
+.arrowLeftTop{
+  transform: translateX(-110px);
+  transition:all .2s ease;
+  }
+  
+  .arrowRightTop{
+  transform: translateX(-100px);
+  transition:all .2s ease;
+  }
+  .list>li:hover{
+    cursor: pointer;
+    color: grey;
+  }
+
+  
+@media screen and (max-width:1500px){
+  .list{
+    /* margin-right: 500px; */
+    font-size: 20px;
+    position: absolute;
+    right:0px;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    width: 600px;
+  }
+   .list>li {
+  list-style-type: none;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 600;
+  position: relative;
+  }
+  .list>li:hover{
+    cursor: pointer;
+    color: grey;
+  }
+ 
+}
+  
+
+@media screen and (max-width:1200px){
+
+.navbar {
+  
+  position: relative;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100vw;
+margin-top: 0px;
+padding-top: 50px;
+z-index: 9999999 !important;
+background:white
+}
+.logo_font{
+margin-left: 100px;
+}
+.sideBar{
+margin-right: 100px;
+font-size: 20px;
+position: absolute;
+right:10px;
+}
+.sideBar:hover{
+  cursor: pointer;
+}
+/* for main css */
+.list{
+  /* margin-right: 500px; */
+  font-size: 20px;
+  position: absolute;
+  right:0px;
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  width: 600px;
+}
+ .list>li {
+list-style-type: none;
+font-size: 1.2rem;
+text-align: center;
+font-weight: 600;
+position: relative;
+}
+.list>li:hover{
+  cursor: pointer;
+  color: grey;
+}
+
+.book{
+  width: 100px;
+  margin-left: -20px;
+}
+
+.dropList{
+  width: 100vw;
+  position: absolute;
+  -webkit-box-shadow: 0 8px 6px -6px grey;
+     -moz-box-shadow: 0 8px 6px -6px grey;
+          box-shadow: 0 8px 6px -6px grey;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 40px;
+  transform:translateY(0px);
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 30px 0 30px 100px;
+  animation: dropDown .3s ;
+  z-index: -1;
+   margin-left: 0px;
+   background:white;
+  }
+  .dropList>li{
+  width: 200px;
+ transform:translateX(30px);
+  }
+  .dropListUp>li{
+    transform:translateX(30px);
+  }
+  .dropList>li:hover{
+    cursor:pointer;
+    color: grey;
+  }
+  .bookBox>li:hover{
+    cursor:pointer;
+    color: grey;
+  }
+  .book{
+  display: flex; 
+  width: 100px;
+  }
+  .bookBox{
+  display: flex;
+  width: 120px;
+  transform:translateX(50px);
+  align-items: center;
+  
+  }
+  
+
+  .dropListUp{
+  animation: dropDownUp .3s ease-out;
+  position: absolute;
+  width: 100vw;
+  -webkit-box-shadow: 0 8px 6px -6px grey;
+     -moz-box-shadow: 0 8px 6px -6px grey;
+          box-shadow: 0 8px 6px -6px grey;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 40px;
+  transform: translateY(-350px);
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 30px 0 30px 100px;
+  margin-left: 0px;
+  z-index: -1;
+  background:white;
+  }
+  .arrowLeft{
+    transform: translateX(-10px);
+    transition:all .2s ease;
+    }
+    
+    .arrowRight{
+    transform: translateX(0px);
+    transition:all .2s ease;
+    }
+
+}
+@media screen and (max-width:900px){
+.navbar {
+ 
+  position: absolute;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100vw;
+margin-top: 50px;
+margin-top: 0px;
+padding-top: 50px;
+background:white
+}
+.logo_font{
+margin-left: 50px;
+}
+.sideBar{
+margin-right: 100px;
+margin-top: 5px;
+font-size: 10px;
+position: absolute;
+right: 10px;
+}
+
+  /* for main css */
+
+.dropList{
+  width: 100vw;
+  position: absolute;
+  -webkit-box-shadow: 0 8px 6px -6px grey;
+     -moz-box-shadow: 0 8px 6px -6px grey;
+          box-shadow: 0 8px 6px -6px grey;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 40px;
+  transform:translateY(80px);
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 30px 0 30px 100px;
+  animation: dropDown .3s ;
+  background:white;
+   margin-left: 0px;
+  }
+  .dropList>li{
+  width: 200px;
+ transform:translateX(20px);
+  }
+  .dropListUp>li{
+    transform:translateX(20px);
+  }
+  .book{
+  display: flex; 
+  width: 200px;
+  }
+  .bookBox{
+  display: flex;
+  width: 120px;
+  transform:translateX(40px)
+  }
+
+  .dropListUp{
+  animation: dropDownUp .3s ease-out;
+  position: absolute;
+  width: 100vw;
+  -webkit-box-shadow: 0 8px 6px -6px grey;
+     -moz-box-shadow: 0 8px 6px -6px grey;
+          box-shadow: 0 8px 6px -6px grey;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 40px;
+  transform: translateY(-350px);
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 30px 0 30px 100px;
+  margin-left: 0px;
+  background:white;
+ 
+  }
+  .arrowLeft{
+    transform: translateX(-50px);
+    transition:all .2s ease;
+    }
+    
+    .arrowRight{
+    transform: translateX(-40px);
+    transition:all .2s ease;
+    }
+
+}
+
+@media screen and (max-width:600px){
+.navbar {
+  
+  position: relative;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+/* margin-top: 50px; */
+margin-top: 0px;
+padding-top: 50px;
+width: 100vw;
+z-index: 9999999 !important;
+background:rgb(255, 255, 255)
+}
+.logo_font{
+margin-left: 10px;
+font-size: 20px;
+}
+.sideBar{
+margin-right: 50px;
+margin-top: 5px;
+font-size: 10px;
+position: absolute;
+right: 10px;
+}
+/* for main css */
+
+.dropList{
+  width: 100vw;
+  position: absolute;
+  -webkit-box-shadow: 0 8px 6px -6px grey;
+     -moz-box-shadow: 0 8px 6px -6px grey;
+          box-shadow: 0 8px 6px -6px grey;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 40px;
+  transform:translateY(0px);
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 30px 0 30px 100px;
+  animation: dropDown .3s ;
+  z-index: -10;
+   margin-left: 0px;
+   background:white;
+  }
+  .dropList>li{
+  width: 200px;
+ transform:translateX(-20px);
+  }
+  .dropListUp>li{
+    transform:translateX(-20px);
+  }
+  .book{
+  display: flex; 
+  width: 200px;
+  }
+  .bookBox{
+  display: flex;
+  width: 120px;
+  transform:translateX(0px)
+  }
+
+  .dropListUp{
+  animation: dropDownUp .3s ease-out;
+  position: absolute;
+  width: 100vw;
+  -webkit-box-shadow: 0 8px 6px -6px grey;
+     -moz-box-shadow: 0 8px 6px -6px grey;
+          box-shadow: 0 8px 6px -6px grey;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 40px;
+  transform: translateY(-350px);
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 30px 0 30px 100px;
+  margin-left: 0px;
+  z-index: -10;
+  background:white;
+  }
+ 
+}
+
+@media screen and (max-width:300px){
+.navbar {
+  z-index: 10;
+  position: relative;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100vw;
+margin-top: 0px;
+padding-top: 50px;
+background:white;
+margin: 0;
+}
+.logo_font{
+margin-left: 10px;
+font-size: 20px;
+}
+.sideBar{
+margin-right: 50px;
+margin-top: 5px;
+font-size: 10px;
+position: absolute;
+right: 10px;
+}
+
+.dropList{
+  width: 100vw;
+  position: absolute;
+  -webkit-box-shadow: 0 8px 6px -6px grey;
+     -moz-box-shadow: 0 8px 6px -6px grey;
+          box-shadow: 0 8px 6px -6px grey;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 40px;
+  transform:translateY(0px);
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 30px 0 30px 100px;
+  animation: dropDown .3s ;
+  z-index: -10;
+   margin-left: 0px;
+   background:white;
+  }
+  .dropList>li{
+  width: 200px;
+ transform:translateX(-40px);
+  }
+  .dropListUp>li{
+    transform:translateX(-40px);
+  }
+  .book{
+  display: flex; 
+  width: 200px;
+  }
+  .bookBox{
+  display: flex;
+  width: 120px;
+  transform:translateX(-40px)
+  }
+
+  .dropListUp{
+  animation: dropDownUp .3s ease-out;
+  position: absolute;
+  width: 100vw;
+  -webkit-box-shadow: 0 8px 6px -6px grey;
+     -moz-box-shadow: 0 8px 6px -6px grey;
+          box-shadow: 0 8px 6px -6px grey;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 40px;
+  transform: translateY(-350px);
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 30px 0 30px 100px;
+  margin-left: 0px;
+  z-index: -10;
+  background:white;
+  }
+
+}
+
+  
+
+
+@keyframes dropDown {
+0%{
+  transform: translateY(-350px);
+}
+10%{
+  transform: translateY(-300px);
+}
+20%{
+  transform: translateY(-250px);
+}
+30%{
+  transform: translateY(-200px);
+}
+40%{
+  transform:translateY(-150px);
+}
+50%{
+  transform:translateY(-100px);
+}
+60%{
+  transform:translateY(-80px);
+}
+70%{
+  transform:translateY(-60px);
+}
+80%{
+  transform:translateY(-40px);
+}
+90%{
+  transform:translateY(-20px);
+}
+100%{
+  transform:translateY(0px);
+}
+}
+@keyframes dropDownUp {
+0%{
+  transform: translateY(0px);
+}
+10%{
+  transform: translateY(-20px);
+}
+20%{
+  transform: translateY(-40px);
+}
+30%{
+  transform: translateY(-60px);
+}
+40%{
+  transform:translateY(-80px);
+}
+50%{
+  transform:translateY(-100px);
+}
+60%{
+  transform:translateY(-150px);
+}
+70%{
+  transform:translateY(-200px);
+}
+80%{
+  transform:translateY(-250px);
+}
+90%{
+  transform:translateY(-300px);
+}
+100%{
+  transform:translateY(-350px);
+}
+}
+

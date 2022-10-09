@@ -1,0 +1,197 @@
+@font-face {
+    font-family: "jakarta-bold";
+    font-style: normal;
+    font-weight: normal;
+    src: local("SF-Pro-Regular"),
+      url("../../../../jakarta/PlusJakartaDisplay-Bold.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: "jakarta-medium";
+    font-style: normal;
+    font-weight: normal;
+    src: local("SF-Pro-Regular"),
+      url("../../../../jakarta/PlusJakartaDisplay-Medium.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "jakarta-light";
+    font-style: normal;
+    font-weight: normal;
+    src: local("SF-Pro-Regular"),
+      url("../../../../jakarta/PlusJakartaDisplay-Light.otf") format("opentype");
+  }
+
+
+
+
+.serviceContainer{
+    position: absolute;
+    width: 100vw;
+    top: 1000px;
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    background: black;
+    bottom: 15px;
+    margin-left: 10px;
+
+    }
+
+.services{
+    font-family: jakarta-medium;
+   font-size: 2rem;
+   letter-spacing: 5px;
+   background: -webkit-linear-gradient(
+    360deg,
+    rgb(177, 108, 234) 0%,
+    rgb(225, 99, 155) 30%,
+    rgb(255, 104, 101) 60%,
+    rgb(255, 133, 88) 90%
+  );
+  width: 200px;
+  height: 200px;
+  /* top: -2px; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+   margin-top: 10px;
+  }
+.title{
+    position: absolute;
+    width: 1000px;
+    text-align: center;
+    font-family: jakarta-bold;
+    font-size: 4rem;
+    top: 50px;
+}
+
+.boxContainer{
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content:space-evenly;
+    margin-left: -200px;
+    margin-top: 350px;
+  
+}
+@media screen and (min-width:2500px){
+  .boxContainer{
+    width: 50%;
+  }
+}
+@media screen and (max-width:1500px){
+  .boxContainer{
+    display:grid;
+    justify-content:space-around;
+    position: absolute;
+    width: 70%;
+    margin-left: -100px;
+  }
+}
+@media screen and (max-width:1200px){
+  .serviceContainer{
+    position: absolute;
+    width: 100vw;
+    top: 1300px;
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.boxContainer{
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content:space-around;
+  margin-left: -100px;
+  margin-top: 350px;
+
+}
+}
+@media screen and (max-width:1000px){
+  .serviceContainer{
+    position: absolute;
+    width: 100vw;
+    top: 1350px;
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+  .boxContainer{
+    display:grid;
+    grid-auto-flow: row;
+    gap: 450px;
+    justify-content:space-evenly;
+    position: absolute;
+    width: 80%;
+    margin-left: -200px;
+  }
+}
+@media screen and (max-width:800px){
+    .title{
+      font-size: 3rem;
+    }
+    .dot{
+      width: 10px;
+      height: 10px;
+      bottom: 7px;
+    }
+}
+
+@media screen and (max-width:600px) {
+  .serviceContainer{
+    top: 1200px;
+  }
+  .title{
+    font-size: 2.5rem;
+  }
+  .dot{
+    width: 8px;
+    height: 8px;
+    bottom: 5px;
+  }
+}
+
+@media screen and (max-width:500px){
+  .serviceContainer{
+    top: 1100px;
+  }
+  .title{
+    font-size: 2rem;
+  }
+  .boxContainer{
+    top: -50px;
+  }
+  .dot{
+    width: 8px;
+    height: 8px;
+    bottom: 5px;
+  }
+}
+
+@media screen and (max-width:400px){
+  .serviceContainer{
+    top: 1000px;
+  }
+  .title{
+    font-size: 1.5rem
+  }
+
+.boxContainer{
+  top: -70px;
+  left: 40%;
+}
+.dot{
+  width: 8px;
+  height: 8px;
+  bottom: 5px;
+}
+}
